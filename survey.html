@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" THis website is about Emmanuel Ngusa\'s skills and various projects that has built or contributed during his carrier up today">
+    <meta name="keywords" content="sotware developer, javascript, portfolio,MongoDB, ReaactJs, Express.">
+    <meta name="author" content="Emmanuel Ngusa">
+    <title>Emmanuel Ngusa Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li>
+                    <button id="theme-toggle">Dark Mode</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="survey-form">
+            <h2>Feedback Form</h2>
+            <p>All feedbacks are safe and private</p>
+            <form id="surveyForm">
+              
+
+                <div class="form-group">
+                    <label>How satisfied are you with services?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="design-very-satisfied" name="design-satisfaction" value="very-satisfied" required>
+                        <label for="design-very-satisfied">Very Satisfied</label><br>
+                        <input type="radio" id="design-satisfied" name="design-satisfaction" value="satisfied">
+                        <label for="design-satisfied">Satisfied</label><br>
+                        <input type="radio" id="design-neutral" name="design-satisfaction" value="neutral">
+                        <label for="design-neutral">Neutral</label><br>
+                        <input type="radio" id="design-dissatisfied" name="design-satisfaction" value="dissatisfied">
+                        <label for="design-dissatisfied">Dissatisfied</label><br>
+                        <input type="radio" id="design-very-dissatisfied" name="design-satisfaction" value="very-dissatisfied">
+                        <label for="design-very-dissatisfied">Very Dissatisfied</label>
+                    </div>
+                    <span class="error-message" id="designError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>How did you know me?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="navigation-very-easy" name="navigation-ease" value="very-easy" required>
+                        <label for="navigation-very-easy">Social media</label><br>
+                        <input type="radio" id="navigation-easy" name="navigation-ease" value="easy">
+                        <label for="navigation-easy">google search</label><br>
+                        <input type="radio" id="navigation-neutral" name="navigation-ease" value="neutral">
+                        <label for="navigation-neutral">Friends</label><br>
+                        
+                    <span class="error-message" id="navigationError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Which service have done to you ?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="useful-home" name="useful-sections" value="home">
+                        <label for="useful-home">Web development</label><br>
+                        <input type="checkbox" id="useful-about" name="useful-sections" value="about">
+                        <label for="useful-about">application design</label><br>
+                        <input type="checkbox" id="useful-projects" name="useful-sections" value="projects">
+                        <label for="useful-projects">Database design</label><br>
+                        <input type="checkbox" id="useful-contact" name="useful-sections" value="contact">
+                        <label for="useful-contact">application maintainance</label><br>
+                       
+                    </div>
+                </div>
+
+                <div class="form-group">
+                   
+                    <textarea id="comments" name="comments" rows="5" placeholder="Leave a comments here...."></textarea>
+                </div>
+
+                <button type="submit" class="button">Submit Feedback</button>
+                <div id="survey-success-message" class="success-message" style="display:none;">Thank you for your feedback!</div>
+            </form>
+        </section>
+    </main>
+
+     <footer>
+        <p>&copy; 2025 ngusadien. All rights reserved.</p>
+    </footer>
+   
+    <script src="/script.js"></script>
+</body>
+</html>
