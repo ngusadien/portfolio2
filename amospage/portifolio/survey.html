@@ -1,0 +1,93 @@
+<!-- survey.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+  <link rel="stylesheet" href="../css/styles3.css">
+  <script defer src="../js/index.js"></script>
+  <style>
+     /* Survey Form Styling */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+form textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #357ab8;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+    <nav>
+      <ul class="horizontal-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+        <li><button onclick="toggleTheme()">Toggle Theme</button></li>
+      </ul>
+    </nav>
+    <h1>Survey Form</h1>
+  </header>
+  <form>
+    <label>Are you a developer?</label><br>
+    <input type="radio" name="dev" value="yes"> Yes
+    <input type="radio" name="dev" value="no"> No<br><br>
+
+    <label>Technologies you use:</label><br>
+    <input type="checkbox" name="tech" value="html"> HTML
+    <input type="checkbox" name="tech" value="css"> CSS
+    <input type="checkbox" name="tech" value="js"> JavaScript<br><br>
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
