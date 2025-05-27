@@ -1,0 +1,149 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="../css/styles3.css">
+  <script defer src="scripts.js"></script>
+  <script defer src="../js/index.js"></script>
+  <style>
+    /* General Reset and Font */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.horizontal-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.horizontal-nav li {
+  margin: 0 15px;
+}
+
+.horizontal-nav a,
+.horizontal-nav button {
+  text-decoration: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.horizontal-nav a:hover,
+.horizontal-nav button:hover {
+  text-decoration: underline;
+}
+
+/* Form Styling */
+form#contactForm {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form#contactForm label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form#contactForm input,
+form#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form#contactForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form#contactForm button[type="submit"] {
+  margin-top: 20px;
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form#contactForm button[type="submit"]:hover {
+  background-color: #357ab8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .horizontal-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form#contactForm {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <header>
+    <nav>
+      <ul class="horizontal-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+        <li><button onclick="toggleTheme()">Toggle Theme</button></li>
+      </ul>
+    </nav>
+     <h1>Contact Form</h1>
+  </header>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
